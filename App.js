@@ -5,7 +5,7 @@ import ListMovies from "./assets/movie";
 export default function App() {
   const renderMovie = ({ item }) => {
     return (
-      <View style={{ borderWidth: "5px", borderColor: "red" }}>
+      <View style={{ borderWidth: 5, borderColor: "red" }}>
         <Text>{item.title}</Text>
         <Text>{item.plot}</Text>
       </View>

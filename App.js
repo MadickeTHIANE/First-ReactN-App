@@ -1,5 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, FlatList } from "react-native";
+import { StyleSheet, Text, View, FlatList, Button } from "react-native";
 import ListMovies from "./assets/movie";
 
 export default function App() {
@@ -8,6 +8,10 @@ export default function App() {
       <View style={styles.movie}>
         <Text>{item.title}</Text>
         <Text>{item.plot}</Text>
+        <Button
+          title="Voir le film"
+          onPress={() => console.log("test")}
+        ></Button>
       </View>
     );
   };

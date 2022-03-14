@@ -5,7 +5,7 @@ import ListMovies from "./assets/movie";
 export default function App() {
   const renderMovie = ({ item }) => {
     return (
-      <View style={{ borderWidth: 5, borderColor: "red" }}>
+      <View style={styles.movie}>
         <Text>{item.title}</Text>
         <Text>{item.plot}</Text>
       </View>
@@ -33,5 +33,11 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
+    marginTop: 50,
+  },
+  movie: {
+    borderWidth: 2,
+    margin: 5,
+    padding: 3,
   },
 });
